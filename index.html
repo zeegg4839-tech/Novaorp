@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07030d">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Nova Orb</title>
+</head>
+<body>
+<main class="app">
+  <header><span class="brand">NOVA ORB</span><button id="settings">⚙︎</button></header>
+  <section class="orb-area">
+    <button id="orb" class="orb" aria-label="Nova Orb">
+      <span class="orb-core"></span><span class="orb-ring"></span>
+    </button>
+    <div id="status">Tap Nova</div>
+  </section>
+  <section id="chat" class="chat"></section>
+  <form id="composer">
+    <input id="message" autocomplete="off" placeholder="Talk to Nova…" />
+    <button type="button" id="mic">🎙️</button>
+    <button type="submit">➤</button>
+  </form>
+  <aside id="panel" class="panel hidden">
+    <h2>Nova Orb</h2>
+    <label>Orb color <input id="color" type="color" value="#8a2be2"></label>
+    <label>Glow <input id="glow" type="range" min="20" max="100" value="80"></label>
+    <button id="clear">Clear chat</button>
+    <button id="close">Done</button>
+  </aside>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
